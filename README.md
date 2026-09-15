@@ -2,7 +2,7 @@
 
 Developer: Daria Kalmykova  
 App: BatchMode  
-Effective date: September 11, 2026
+Effective date: September 15, 2026
 
 BatchMode helps you reduce interruptions by snoozing Android notifications and letting Android restore them at scheduled intervals. Your notification data is processed on your device. BatchMode does not send it to the developer or to a server.
 
@@ -36,6 +36,8 @@ Android, Google Play, and the apps that originally send your notifications opera
 ## Diagnostic logs
 
 The production release of BatchMode does not write diagnostic logs.
+
+Test releases record diagnostic logs containing app identifiers, hashed notification identifiers, event times, and batching outcomes—not notification text. Logs are stored in the app’s private storage and are not uploaded automatically; BatchMode has no internet permission. You can choose to share them through another app using “Share diagnostic logs.”
 
 ## Retention and deletion
 
